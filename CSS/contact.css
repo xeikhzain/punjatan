@@ -1,0 +1,224 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.contact-us {
+    padding: 0 20px;
+    margin: 2rem auto;
+    max-width: 1500px;
+}
+
+.contact-us-hero {
+    background-image: url("../Punjatan Assets/contact-us.png");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    padding: 5rem 5rem;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.contact-us-hero h1 {
+    font-size: 60px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    text-shadow: -4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.contact-us-hero h3 {
+    font-size: 25px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+}
+
+.contact-us-hero h6 {
+    font-size: 25px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+}
+
+.contact-us-main {
+    padding: 0 30px;
+    margin: 0 auto;
+    max-width: 1500px;
+    display: flex;
+    gap: 2rem;
+}
+
+.need-help-head {
+    background: rgba(77, 133, 185, 1);
+    width: 410px;
+    height: 45px;
+    padding: .7rem 1.5rem;
+    color: rgba(255, 255, 255, 1);
+}
+
+.contact-us-left {
+    width: 410px;
+}
+
+.contact-us-left label {
+    color: rgba(0, 68, 135, 1);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.contact-us-left input {
+    height: 41px;
+    width: 410px;
+    border: 1px solid rgba(204, 204, 204, 1);
+    outline: none;
+    color: rgba(51, 51, 51, 1);
+}
+
+.contact-us-left textarea {
+    border: 1px solid rgba(204, 204, 204, 1);
+    outline: none;
+    color: rgba(51, 51, 51, 1);
+}
+
+.submit-btn {
+    background-color: rgba(77, 133, 185, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    font-weight: 700;
+    align-items: center;
+    width: 410px;
+    height: 41px;
+    border: none;
+}
+
+.contact-us-right {
+    padding: 0 0 0 1rem;
+    border-left: 1px solid rgba(204, 204, 204, 1)
+}
+
+.contact-us-right h3 {
+    color: rgba(0, 68, 135, 1);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.contact-us-right p {
+    font-size: 14px;
+    color: rgba(51, 51, 51, 1);
+    font-weight: 500;
+}
+
+.contact-us-right h5 {
+    color: rgba(51, 51, 51, 1);
+    font-weight: 700;
+}
+
+.contact-us-service-bar {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 3rem 30px;
+    margin: 2rem auto 0 auto;
+    max-width: 1500px;
+    gap: 3rem;
+}
+
+.services-contact-us {
+    background: #EDEDED;
+}
+
+.contact-us-service-bar h1 {
+    color: rgba(0, 68, 135, 1);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.contact-us-service-bar p {
+    color: rgba(128, 128, 128, 1);
+    font-size: 15px;
+}
+
+/* Media query */
+@media screen and (max-width : 768px) {
+    .contact-us-service-bar h1 {
+        font-size: 15px;
+    }
+
+    .contact-us-service-bar p {
+        font-size: 12px;
+    }
+
+    .contact-us-main {
+        flex-direction: column;
+    }
+
+    .contact-us-left {
+        width: 100% !important;
+    }
+
+    .contact-us-right {
+        border-left: none;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width : 940px) {
+    .contact-us-service-bar h1 {
+        font-size: 18px;
+    }
+
+    .contact-us-service-bar p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width : 480px) {
+    .contact-us-service-bar {
+        flex-direction: column;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width : 992px) {
+    .contact-us-left {
+        width: 340px;
+    }
+
+    .need-help-head {
+        width: 100%;
+    }
+
+    .contact-us-left input {
+        width: 100%;
+    }
+
+    .contact-us-left textarea {
+        width: 100%;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width : 540px) {
+    .contact-us-hero h1 {
+        font-size: 40px;
+    }
+
+    .contact-us-hero h3 {
+        font-size: 20px;
+    }
+
+    .contact-us-hero h6 {
+        font-size: 20px;
+    }
+
+    .contact-us-hero {
+        padding: 4rem 1.5rem;
+    }
+}

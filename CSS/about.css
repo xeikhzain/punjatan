@@ -1,0 +1,215 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.about-us {
+    padding: 3rem 20px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.about-hero {
+    background-image: url("../Punjatan Assets/Rectangle45.png");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    border-radius: 25px;
+    padding: 5rem 5rem;
+}
+
+.about-hero h1 {
+    font-size: 60px;
+    font-weight: 600;
+    color: rgba(0, 68, 135, 1);
+}
+
+.about-hero h3 {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgba(0, 68, 135, 1);
+    padding: 1rem 0 0 0;
+
+}
+
+.about-hero h6 {
+    font-size: 25px;
+    font-weight: 300;
+    color: rgba(0, 68, 135, 1);
+}
+
+.about-us-para-text strong {
+    font-size: 25px;
+    font-weight: 700;
+    color: rgba(0, 68, 135, 1);
+}
+
+.about-us-para-text p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #808080;
+    padding: .5rem 5rem 0 0;
+}
+
+.about-us-para-img {
+    padding: 1.5rem 0 0 0;
+}
+
+.about-us-text-main-div {
+    padding: 0 30px;
+    margin: 0 auto;
+    max-width: 1500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us-service-bar {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 3rem 30px;
+    margin: 5rem auto 0 auto;
+    max-width: 1500px;
+    gap: 3rem;
+}
+
+.services-about {
+    background: #EDEDED;
+}
+
+.about-us-service-bar h1 {
+    color: rgba(0, 68, 135, 1);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.about-us-service-bar p {
+    color: rgba(128, 128, 128, 1);
+    font-size: 15px;
+}
+
+
+/* Media Query */
+
+@media screen and (max-width : 1024px) {
+    .about-hero h1 {
+        font-size: 45px;
+    }
+
+    .about-hero h3 {
+        font-size: 20px;
+    }
+
+    .about-hero h6 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width : 450px) {
+    .about-hero h1 {
+        font-size: 32px;
+    }
+
+    .about-hero h3 {
+        font-size: 15px;
+    }
+
+    .about-hero h6 {
+        font-size: 15px;
+    }
+
+    .about-hero {
+        padding: 5rem 2rem;
+    }
+}
+
+@media screen and (min-width : 768px) and (max-width : 1220px) {
+    .about-us-para-text p {
+        height: 316px;
+        overflow: scroll;
+    }
+}
+
+@media screen and (max-width : 1100px) {
+    .about-us-para-img img {
+        width: 450px;
+        height: auto;
+    }
+
+    .about-us-para-text p {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width : 992px) {
+    .about-us-para-img img {
+        width: 400px;
+    }
+
+    .about-us-para-text p {
+        height: 260px;
+    }
+}
+
+@media screen and (max-width : 840px) {
+    .about-us-para-img img {
+        width: 380px;
+    }
+}
+
+@media screen and (max-width : 800px) {
+    .about-us-para-img img {
+        width: 360px;
+    }
+
+    .about-us-para-text p {
+        padding: .4rem 1rem 0 0;
+        height: 235px;
+    }
+}
+
+@media screen and (max-width : 940px) {
+    .about-us-service-bar h1 {
+        font-size: 18px;
+    }
+
+    .about-us-service-bar p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .about-us-para-text p {
+        height: auto;
+    }
+
+    .about-us-text-main-div {
+        flex-direction: column;
+    }
+
+    .about-us-para-img img {
+        width: 100%;
+    }
+
+    .about-us-service-bar h1 {
+        font-size: 15px;
+    }
+
+    .about-us-service-bar p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width : 480px) {
+    .about-us-service-bar {
+        flex-direction: column;
+        width: 70%;
+    }
+}

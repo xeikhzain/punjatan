@@ -1,0 +1,401 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.footer-top-main {
+    background: linear-gradient(180deg, #F8F6F7 0%, #EDEDED 100%);
+    box-shadow: 0px -4px 10px 0px #00000026;
+}
+
+.footer-top {
+    padding: 0 30px;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 400px;
+    height: auto;
+}
+
+.footer-social-icon {
+    font-size: 40px;
+    color: #4D85B9;
+}
+
+.footer-social-icon:hover {
+    color: #B61E1F;
+    transition: color 0.3s ease;
+}
+
+.news-letter label {
+    font-weight: 400;
+    color: #808080;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.news-letter input {
+    width: 300px;
+    border-radius: 50px;
+    padding: 10px;
+    color: #808080;
+    font-weight: 400;
+    border: 1px solid #bcbaba;
+    outline: none;
+    background-color: white;
+}
+
+.news-letter button {
+    border-radius: 20px;
+    padding: .6rem;
+    width: 100px;
+    background-color: #4D85B9;
+    color: #F8F6F7;
+    border: #F8F6F7;
+}
+
+.news-letter button:hover {
+    background-color: #B61E1F;
+}
+
+.footer-links {
+    padding: 0 30px;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    background: #EDEDED;
+    padding: 1rem;
+}
+
+.quick-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.quick-links p {
+    font-weight: 700;
+    font-size: 16px;
+    color: #004487;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #808080;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer-address {
+    display: flex;
+    list-style: none;
+    width: 200px;
+    gap: 10px;
+}
+
+.footer-address i {
+    color: #004487;
+}
+
+.footer-ship-logo {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-ship-logo img {
+    width: 60px;
+    height: 20px;
+}
+
+.footer-ship-logo-2 {
+    width: 70px;
+    height: 20px;
+    padding-left: 8px;
+}
+
+.payment-logo {
+    padding: 0px 30px;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #EDEDED;
+    border-top: 1px solid #808080;
+    flex-wrap: wrap;
+}
+
+.payment-logo h3 {
+    color: #004487;
+}
+
+.payment-logo img {
+    width: 90px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.western-payemnt-img {
+    width: 100px !important;
+    height: 80px !important;
+}
+
+.copyright {
+    padding: 0 30px;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    background-color: #EDEDED;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: #808080;
+    font-size: 12px;
+}
+
+.copyright p {
+    font-size: 12px;
+    color: #808080;
+}
+
+.news-letter-2 label {
+    font-weight: 400;
+    color: #808080;
+    padding: 2rem 0 5px 5px;
+}
+
+.news-letter-2 input {
+    width: 300px;
+    border-radius: 50px;
+    padding: 10px;
+    color: #808080;
+    font-weight: 400;
+    border: 1px solid #bcbaba;
+    outline: none;
+    background-color: white;
+}
+
+.news-letter-2 button {
+    border-radius: 20px;
+    padding: .6rem;
+    width: 100px;
+    background-color: #4D85B9;
+    color: #F8F6F7;
+    border: #F8F6F7;
+}
+
+.news-letter-2 button:hover {
+    background-color: #B61E1F;
+}
+
+/* Media Query */
+@media screen and (max-width : 1024px) {
+    .footer-logo img {
+        width: 320px;
+    }
+
+    .news-letter label {
+        font-size: 12px;
+    }
+
+    .news-letter input {
+        width: 180px;
+        height: 30px;
+    }
+
+    .news-letter button {
+        padding: .4rem;
+        width: 70px;
+        font-size: 12px;
+    }
+
+    .footer-social-icon {
+        font-size: 30px;
+    }
+
+    .quick-links p {
+        font-size: 14px;
+    }
+
+    .quick-links p {
+        font-size: 14px;
+    }
+
+    .quick-links a {
+        font-size: 12px;
+    }
+
+    .payment-logo h3 {
+        font-size: 16px;
+    }
+
+    .payment-logo img {
+        width: 60px;
+        height: 30px;
+    }
+
+    .western-payemnt-img {
+        width: 90px !important;
+        height: 70px !important;
+    }
+
+    .copyright a {
+        font-size: 11px;
+    }
+
+    .copyright p {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width : 930px) {
+    .footer-logo img {
+        width: 310px;
+    }
+
+    .news-letter label {
+        font-size: 11px;
+    }
+
+    .news-letter input {
+        width: 170px;
+        height: 27px;
+    }
+
+    .quick-links p {
+        font-size: 13px;
+    }
+
+    .quick-links a {
+        font-size: 11px;
+    }
+
+    .footer-ship-logo img {
+        width: 50px;
+        height: 20px;
+    }
+
+    .payment-logo h3 {
+        font-size: 14px;
+    }
+
+    .payment-logo img {
+        width: 50px;
+        height: 25px;
+    }
+
+    .copyright a {
+        font-size: 10px;
+    }
+
+    .copyright p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width : 855px) {
+    .footer-address {
+        width: 170px;
+    }
+
+    .quick-links {
+        width: 160px;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .quick-links {
+        flex: 1 1 50%;
+        max-width: 50%;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+    }
+    .hidden-heading{
+        display: none;
+    }
+}
+
+@media screen and (max-width : 700px) {
+    .news-letter label {
+        display: none;
+    }
+
+    .news-letter input {
+        display: none;
+    }
+
+    .news-letter button {
+        display: none;
+    }
+
+    .footer-social-icon {
+        display: none;
+    }
+
+    .news-letter-2 label {
+        font-size: 12px;
+    }
+
+    .news-letter-2 input {
+        width: 200px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .news-letter-2 button {
+        padding: .4rem;
+        width: 70px;
+    }
+    .quick-links a{
+        text-align: left;
+    }
+}
+
+@media screen and (max-width : 350px) {
+    .footer-logo img {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width : 370px) {
+    .footer-address {
+        width: 130px;
+    }
+}
+
+@media screen and (min-width : 700px) {
+    .news-letter-2 label {
+        display: none;
+    }
+
+    .news-letter-2 input {
+        display: none;
+    }
+
+    .news-letter-2 button {
+        display: none;
+    }
+}
+@media screen and (max-width : 335px) {
+.news-letter-2 button{
+    margin-top: 7px;
+}
+}

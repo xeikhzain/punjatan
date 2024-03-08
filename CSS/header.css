@@ -1,0 +1,380 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #eeeeee;
+}
+
+.header {
+    width: 100%;
+    height: 8rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.h-top-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    max-width: 1500px;
+    margin: 0 auto;
+    height: 80px;
+    width: 100%;
+}
+
+.main-logo {
+    max-width: 450px;
+    width: 100%;
+    transition: all ease 0.9s;
+}
+
+.h-input {
+    position: relative;
+}
+
+.h-input input[type="text"] {
+    height: 35px;
+    width: 350px;
+    border-radius: 50px;
+}
+
+.h-input img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    width: 20px;
+}
+
+.h-input input {
+    position: relative;
+    border-radius: 50px;
+    border: 1px solid #b9b9b9;
+    padding: 0 15px;
+}
+
+#open-menu-btn {
+    font-size: 35px;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+    background: none;
+    border: none;
+}
+
+#close-menu-btn {
+    font-size: 35px;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+    background: none;
+    border: none;
+}
+
+.start-here {
+    display: flex;
+}
+
+.h-register,
+.h-cart {
+    display: flex;
+    align-items: center;
+}
+
+.register-here p,
+.register-here a {
+    margin-right: 10px;
+    outline: none;
+}
+
+.h-register-img img {
+    width: 35px;
+}
+
+.h-register-img,
+.h-cart-img {
+    margin-right: 10px;
+}
+
+.h-cart-img img {
+    width: 35px;
+}
+
+.register-here p:last-child {
+    color: red;
+}
+
+.h-btm-container {
+    box-sizing: border-box;
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.25);
+    background-color: #004487;
+    display: block;
+}
+
+.h-btm-container .nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    gap: 4%;
+
+}
+
+.h-btm-container a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.h-btm-container a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.res-input {
+    display: none;
+}
+
+.shop {
+    position: relative;
+}
+
+
+.drop-down a {
+    color: #878787;
+}
+
+.drop-down {
+    display: none !important;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    position: fixed;
+    top: 8rem;
+    left: 0;
+    width: 100vw;
+    height: 50vh;
+    padding: 20px 20px 20px 15%;
+    box-sizing: border-box;
+    background-color: #eee;
+    z-index: 1000;
+    box-shadow: 0 0.4rem 1.5rem rgba(0, 0, 0, 0.25);
+}
+
+.shop:hover .drop-down {
+    display: grid !important;
+}
+
+.drop-down-list {
+    display: flex;
+    position: relative;
+}
+
+.drop-down-list:hover .inner-drop-down {
+    display: grid !important;
+}
+
+.inner-drop-down .inner-drop-down-list {
+    margin-bottom: 50px;
+}
+
+.inner-drop-down {
+    left: 25% !important;
+    top: 0;
+    margin: 0 auto;
+    display: none !important;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    position: absolute !important;
+    height: 150px;
+    width: 300px;
+    background-color: #fff;
+    gap: 20px;
+    z-index: 999;
+    box-shadow: 0 0.4rem 1.5rem rgba(0, 0, 0, 0.25);
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 15px;
+    left: 0;
+}
+
+.nav-list-li .fa-solid.fa-caret-down {
+    display: none;
+}
+
+.nav-list button {
+    display: none;
+}
+
+@media (max-width: 1190px) {
+    .main-logo {
+        width: 400px;
+    }
+
+    .h-input input[type="text"] {
+        height: 35px;
+        width: 300px;
+        border-radius: 50px;
+    }
+
+    .h-input img {
+        width: 17px;
+    }
+
+    .h-cart-img img {
+        width: 30px;
+    }
+
+    .h-register-img img {
+        width: 30px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .main-logo {
+        width: 300px;
+    }
+
+    .h-btm-container a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 930px) {
+    .register-here p, .register-here a {
+        margin-right: 10px;
+        font-size: 12px;
+    }
+
+    .h-input input[type="text"] {
+        height: 30px;
+        width: 215px;
+    }
+
+    .h-cart-img img {
+        width: 26px;
+    }
+
+    .h-register-img img {
+        width: 26px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .h-input {
+        display: none;
+    }
+
+    .h-btm-container .nav-list {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        height: 60px;
+        gap: 0;
+        padding: 110px 0 0 0;
+        overflow-y: scroll
+    }
+
+    .res-input {
+        position: absolute;
+        top: 90px;
+        display: block;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        background: #004487;
+        padding: 10px 30px;
+    }
+
+
+    .res-input input[type="text"] {
+        height: 35px;
+        width: 300px;
+        border-radius: 50px;
+        font-size: 15px;
+        outline: none;
+        border: 1px solid #b9b9b9;
+        padding: 0 15px;
+    }
+
+    .nav-list-li {
+        width: inherit;
+        border-bottom: 1px solid #999;
+        padding: 20px 30px 20px 30px;
+    }
+
+
+    .res-input img {
+        width: 22px;
+        position: absolute;
+        transform: translateX(-34PX);
+        margin-top: 8px;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    #open-menu-btn {
+        display: block;
+        right: 40px;
+        top: 95px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .nav-list {
+        position: fixed;
+        width: 50%;
+        height: 100vh !important;
+        top: 90px;
+        left: -100%;
+        flex-direction: column;
+        background: #fff;
+        transition: all ease .1s;
+    }
+
+    .nav-list-show {
+        left: 0;
+    }
+
+    .nav-list li a {
+        color: #000;
+        font-size: 20px;
+    }
+
+    .drop-down {
+        top: 60px;
+
+    }
+
+    .nav-list-li .fa-solid.fa-caret-down {
+        display: block;
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    .nav-list-li>a, .nav-list-li>i {
+        display: inline-block !important;
+    }
+
+    .nav-list button {
+        display: block;
+        width: 100%;
+    }
+    .register-btn{
+        padding: 0 30px;
+        width: 100%;
+        margin-top: 30px;
+    }
+}
