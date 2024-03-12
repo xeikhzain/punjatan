@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>punjatan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/check-out-form.css">
+</head>
+
+<body>
+    <div class="co-form">
+        <div class="co-first-part">
+            <h3>SHIPPING DETAILS</h3>
+            <br>
+            <label for="">Name</label>
+            <br>
+            <div class="name">
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+            </div>
+            <br>
+            <div class="address">
+                <label for="">Address</label>
+                <br>
+                <input class="address-input" type="text" rquired>
+            </div>
+            <br>
+            <div class="city-state">
+                <div class="input-co">
+                    <label for="">City</label>
+                    <input type="text" required>
+                </div>
+                <div class="input-co">
+                    <label for="">State/Province</label>
+                    <input type="text" required>
+                </div>
+                <div class="input-co">
+                    <label for="">Country</label>
+                    <input type="text" required>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="hr">
+            <hr>
+        </div>
+        <div class="co-second-part">
+            <div class="co-second-part-heading">
+                <h3>SHIPPING METHOD</h3>
+                <h3>DELIVERED BY</h3>
+            </div>
+            <div class="services-package">
+                <div class="delivery-opt-1" id="standardDelivery">
+                    <div class="package-title">
+                        <h4>Standard Delivery</h4>
+                        <h4>50$</h4>
+                    </div>
+                    <p>Estimated 14-20 day <br>
+                        shipping</p>
+                </div>
+                <div class="delivery-opt-1" id="fastDelivery">
+                    <div class="package-title">
+                        <h4>Fast Delivery</h4>
+                        <h4>80$</h4>
+                    </div>
+                    <p>Estimated 2-5 day <br>
+                        shipping</p>
+                </div>
+                <div class="delivery-opt-2">
+                    <div class="del-logo">
+                        <img src="./Punjatan Assets/TCS-logo-F2F6F6CB0E-seeklogo.com.png" alt="">
+                        <img src="./Punjatan Assets/purepng.com-fedex-logologobrand-logoiconslogos-251519939539h7rji.png"
+                            alt="">
+                    </div>
+                    <br>
+                    <img class="del-logo-2" src="./Punjatan Assets/DHL_Logo.svg.png" alt="">
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="hr">
+            <hr>
+        </div>
+        <div class="co-form-third-part">
+            <br>
+            <h3>PAYMENT METHODS</h3>
+            <div class="credit-card">
+                <h4>Credit Card</h4>
+                <div class="credit-para-logo-main">
+                    <p>Safe money transfer using your bank account, VISA,
+                        Mastercard, Western Union, Easypaisa.</p>
+                    <div class="image-container">
+                        <img class="pay-logo-1" src="../Punjatan Assets/ubl-omni-logo-311CF34558-seeklogo.com.png"
+                            alt="">
+                        <img class="pay-logo-2" src="../Punjatan Assets/Visa_Inc._logo.svg.webp" alt="">
+                        <img class="pay-logo-3" src="../Punjatan Assets/Mastercard-logo.svg.png" alt="">
+                        <img class="pay-logo-4" src="../Punjatan Assets/Easypaisa app logo vector.png" alt="">
+                        <img class="pay-logo-5 western-payemnt-img" src="../Punjatan Assets/Western Union New 2023.png"
+                            alt="">
+                    </div>
+                </div>
+                <br>
+                <label for="">Card Number</label><br>
+                <input type="text" required>
+                <br>
+                <br>
+                <div class="card-info">
+                    <div>
+                        <label for="">Name on Card</label><br>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="">Expiry Date</label><br>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="">CVV Code</label><br>
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="co-fourth-part">
+            <h4>PayPal</h4>
+            <br>
+            <div class="co-fourth-main-2">
+                <div class="paypal-main">
+                    <p>You will be redirected to PayPal website to complete your purchase securely</p>
+                </div>
+                <img src="./Punjatan Assets/PayPal.svg.webp" alt="">
+            </div>
+        </div>
+    </div>
+    <script>
+        // Get references to the divs
+        const standardDeliveryDiv = document.getElementById('standardDelivery');
+        const fastDeliveryDiv = document.getElementById('fastDelivery');
+    
+        // Add click event listeners
+        standardDeliveryDiv.addEventListener('click', function() {
+            standardDeliveryDiv.classList.add('selected'); // Add 'selected' class
+            fastDeliveryDiv.classList.remove('selected'); // Remove 'selected' class from the other div
+        });
+    
+        fastDeliveryDiv.addEventListener('click', function() {
+            fastDeliveryDiv.classList.add('selected'); // Add 'selected' class
+            standardDeliveryDiv.classList.remove('selected'); // Remove 'selected' class from the other div
+        });
+    </script>
+</body>
+
+</html>
