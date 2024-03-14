@@ -113,9 +113,11 @@ body {
     width: 300px;
     height: auto;
 }
+
 .selected {
     border: 2px solid #004487;
 }
+
 .co-form-third-part h3 {
     font-size: 20px;
     font-weight: 700;
@@ -228,6 +230,32 @@ body {
     width: 10%;
     height: auto;
 }
+
+.final-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.final-buttons button {
+    width: 114px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #808080;
+    color: #808080;
+    font-size: 16px;
+    font-weight: 700;
+}
+.payment-button{
+    border: 1.5px solid #004487 !important;
+    color: #004487 !important;
+}
+.payment-button:hover {
+background-color: #004487 !important;
+color: white !important;
+transition: color ;
+}
+
 
 /* Media Query  */
 @media screen and (max-width : 768px) {
@@ -444,17 +472,21 @@ body {
         width: 30%;
     }
 }
+
 @media screen and (min-width : 769px) and (max-width : 1100px) {
-    .del-logo{
+    .del-logo {
         display: flex;
     }
+
     .del-logo img {
         width: 120px;
     }
+
     .del-logo-2 {
-    width: 200px;
+        width: 200px;
     }
-    .co-second-part-heading{
+
+    .co-second-part-heading {
         width: 86%;
     }
 }
