@@ -76,12 +76,16 @@ body {
     border: 1px solid rgba(204, 204, 204, 1);
     outline: none;
     color: rgba(51, 51, 51, 1);
+    border-radius: 5px;
+    padding: 1rem;
 }
 
 .contact-us-left textarea {
     border: 1px solid rgba(204, 204, 204, 1);
     outline: none;
     color: rgba(51, 51, 51, 1);
+    border-radius: 5px;
+    padding: 1rem;
 }
 
 .submit-btn {
@@ -93,10 +97,16 @@ body {
     width: 410px;
     height: 41px;
     border: none;
+    border-radius: 5px;
+}
+.submit-btn:hover {
+background-color: white;
+color: rgba(77, 133, 185, 1);
+border: 2px solid rgba(77, 133, 185, 1);
 }
 
 .contact-us-right {
-    padding: 0 0 0 1rem;
+    padding: 0 0 0 1.7rem;
     border-left: 1px solid rgba(204, 204, 204, 1)
 }
 
