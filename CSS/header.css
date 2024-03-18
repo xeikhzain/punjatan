@@ -37,6 +37,9 @@ body {
 .h-input {
     position: relative;
 }
+.h-input input{
+    outline: none;
+}
 
 .h-input input[type="text"] {
     height: 35px;
@@ -157,7 +160,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     position: fixed;
-    top: 8rem;
+    top: 140px;
     left: 0;
     width: 100vw;
     height: 50vh;
@@ -173,7 +176,7 @@ body {
 }
 
 .drop-down-list {
-    display: flex;
+    /* display: flex; */
     position: relative;
 }
 
@@ -182,19 +185,19 @@ body {
 }
 
 .inner-drop-down .inner-drop-down-list {
-    margin-bottom: 50px;
+    /* margin-bottom: 50px;s */
 }
 
 .inner-drop-down {
     left: 25% !important;
     top: 0;
     margin: 0 auto;
-    display: none !important;
+    /* display: none !important; */
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     position: absolute !important;
     height: 150px;
-    width: 300px;
+    width: 250px;
     background-color: #fff;
     gap: 20px;
     z-index: 999;
@@ -203,6 +206,8 @@ body {
     border-radius: 5px;
     padding: 15px;
     left: 0;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-list-li .fa-solid.fa-caret-down {
