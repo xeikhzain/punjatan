@@ -1,0 +1,266 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.pro-main {
+    padding: 0 30px;
+    margin: 2rem auto;
+    max-width: 1500px;
+    display: flex;
+}
+
+.pro-img img {
+    width: 80px;
+    height: 70px;
+    object-fit: contain;
+    margin: .2rem 0;
+}
+
+.pro-img {
+    border: 1px solid #CCCCCC;
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+    margin: .5rem 0;
+}
+
+.pro-big-img a {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+    text-decoration: none;
+    color: #333333;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.pro-big-img {
+    width: 436px;
+    height: 436px;
+    margin: 0 1rem;
+    object-fit: contain;
+    position: relative;
+}
+
+.pro-big-img img {
+    width: auto;
+    height: 436px;
+}
+
+.pro-img-big-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.pro-left {
+    display: flex;
+}
+
+.pro-right h3 {
+    color: #333333;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.ratings-pro i {
+    color: rgb(255, 191, 0);
+    font-size: 10px;
+}
+
+.ratings-pro {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.ratings-pro p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #808080;
+}
+
+.pro-right h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #004487;
+    padding: .5rem 0;
+}
+
+.cat {
+    display: flex;
+    padding: .5rem 0;
+}
+
+.cat p {
+    width: 120px;
+    color: #808080;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.quantity-controller {
+    display: flex;
+    align-items: center;
+    width: 90px;
+}
+
+.quantity-controller button {
+    width: 25px;
+    height: 25px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.quantity-controller button:hover {
+    background: #B61E1F;
+    transition: background-color 0.3s ease-in;
+    color: #FFFFFF;
+}
+
+.quantity-display {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 14px;
+}
+
+.cart-btn-flex {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.add-cart-btn button {
+    width: 112px;
+    height: 30px;
+    color: #004487;
+    border: 1.5px solid #004487;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.add-cart-btn button:hover {
+    background-color: #004487;
+    color: white;
+    transition: background-color 0.3s ease-in;
+}
+
+.cart-btn-flex i {
+    font-size: 25px;
+    color: #004487;
+}
+
+.badge {
+    justify-content: space-between;
+}
+
+.badge img {
+    margin-top: -4rem;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 55%;
+    max-width: 550px;
+    height: 90vh;
+    object-fit: contain;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content img {
+    width: auto;
+    height: 90vh;
+}
+
+.close {
+    color: #fff;
+    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.pro-img:active {
+    border: 2px solid #004487;
+}
+
+.review-main {
+    max-width: 1500px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.review-main h3 {
+    color: #004487;
+    font-size: 20px;
+    font-family: 700;
+}
+
+.review-h {
+    display: flex;
+    justify-content: space-between;
+}
+
+.review-h h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.review-h span {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.review-h i {
+    font-size: 13px;
+    color: #F6B100;
+}
+
+.reviews {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+}
+.review-1 p{
+    font-size: 14px;
+    font-weight: 400;
+}
+.product-c-main{
+    padding: 0 30px;
+    margin: 0 auto;
+    max-width: 1500px;
+}
+.product-c-main h3{
+font-size: 20px;
+color: #004487;
+font-weight: 700;
+}
